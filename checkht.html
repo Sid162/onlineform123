@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+ <div id="demo">Btns</div>
+</body>
+<script>
+  for(var i=0; i<5; i++){
+    var btn = document.createElement('button');
+    btn.appendChild(document.createTextNode('Button'+i));
+    btn.addEventListener('click',()=>console.log(i));
+    document.querySelector("#demo").appendChild(btn);
+  }
+</script>
+</html>
